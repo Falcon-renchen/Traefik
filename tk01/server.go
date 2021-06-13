@@ -1,10 +1,42 @@
 package main
 
-import "net/http"
+import (
+	"log"
+	"net/http"
+	"os"
+	"os/signal"
+	"syscall"
+)
 
 func main() {
-	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
-		writer.Write([]byte("user api1"))
-	})
-	http.ListenAndServe(":8001",nil)
+
+	go (func() {
+		mux := http.NewServeMux()
+		mux.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
+			writer.Write([]byte("user api1\r\n"))
+		})
+		server := &http.Server{
+			Addr:    ":8001",
+			Handler: mux,
+		}
+		server.ListenAndServe()
+	})()
+
+	go (func() {
+		mux := http.NewServeMux()
+		mux.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
+			writer.Write([]byte("user api2\r\n"))
+		})
+		server := &http.Server{
+			Addr:    ":8002",
+			Handler: mux,
+		}
+		server.ListenAndServe()
+	})()
+
+	c := make(chan os.Signal)
+	signal.Notify(c, syscall.SIGINT, syscall.SIGTERM)
+
+	getErr := <-c
+	log.Println(getErr)
 }
