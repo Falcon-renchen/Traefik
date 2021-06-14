@@ -3,6 +3,9 @@
 [file]
   [backends]
      [backends.pro1]
+        [backends.pro1.maxconn]
+          amount=10
+          extractorfunc="request.host"
         [backends.pro1.servers.userservice1]
            url="http://172.16.17.1:8001"
            weight=1
@@ -10,6 +13,8 @@
            url="http://172.16.17.1:8002"
            weight=2
      [backends.pro1v2]
+        [backends.pro1v2.circuitbreaker]
+           expression="LatencyAtQuantileMS(50.0) > 1000"
         [backends.pro1v2.servers.userservice1]
            url="http://172.16.17.1:8003"
    [frontends]
@@ -23,8 +28,17 @@
         entrypoints=["http","https"]
         passHostHeader=true
         backend="pro1v2"
+          [frontends.pro1v2.headers.customresponseheaders]
+           X-Name="shenyi"
+          [frontends.pro1v2.headers.customrequestheaders]
+           X-name="golang"
           [frontends.pro1v2.routes.apirule1]
            rule="Host:services.shenyi.me;PathPrefix:/v2/users"
           [frontends.pro1v2.routes.apirule2]
            rule="Method:GET,POST"
-
+          [frontends.pro1v2.ratelimit]
+             extractorfunc="client.ip"
+           [frontends.pro1v2.ratelimit.rateset.rateset1]
+                period="3s"
+                average=1
+                burst=10

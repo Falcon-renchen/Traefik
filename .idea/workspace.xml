@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72938a0-024f-4d15-bdab-9193b8be38ad" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker/26.res,req add x-name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/27.set max conn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/28.1ratelimit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/28.2 ratelimit result.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/29. 如果执行2次，总共大于1s就会触发熔断.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/30.consul setting micro .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tk01/prod/prod_main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tk01/test/test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tk01/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/tk01/server/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tk01/tkconfig/rules.toml" beforeDir="false" afterPath="$PROJECT_DIR$/tk01/tkconfig/rules.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tk01/tkconfig/traefik.toml" beforeDir="false" afterPath="$PROJECT_DIR$/tk01/tkconfig/traefik.toml" afterDir="false" />
     </list>
@@ -31,13 +42,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1tiUSrcGWmMIHUrJCiCCQC6jhBk" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -49,6 +63,12 @@
     <property name="last_opened_file_path" value="$USER_HOME$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tk01/server" />
+      <recent name="$PROJECT_DIR$/tk01" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Build.go build server.go">
     <configuration name="go build Traefik/tk01" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="Traefik" />
@@ -56,6 +76,15 @@
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/tk01/server.go" />
       <package value="Traefik/tk01" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Traefik/tk01/tkconfig/test" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="Traefik" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/tk01/tkconfig/test/test.go" />
+      <package value="Traefik/tk01/tkconfig/test" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -71,6 +100,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build server.go" />
+        <item itemvalue="Go Build.go build Traefik/tk01/tkconfig/test" />
         <item itemvalue="Go Build.go build Traefik/tk01" />
       </list>
     </recent_temporary>
@@ -79,6 +109,7 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="tk" />
     <option name="LAST_COMMIT_MESSAGE" value="tk" />
   </component>
@@ -91,26 +122,26 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="984" y="217" key="#Deployment/0.23.1920.1057@0.23.1920.1057" timestamp="1623681964191" />
-    <state x="467" y="149" key="CommitChangelistDialog2" timestamp="1623682599336">
+    <state x="467" y="149" key="CommitChangelistDialog2" timestamp="1623684930498">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="467" y="149" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1623682599336" />
-    <state width="1029" height="164" key="GridCell.Tab.0.bottom" timestamp="1623684633518">
+    <state x="467" y="149" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1623684930498" />
+    <state width="1029" height="482" key="GridCell.Tab.0.bottom" timestamp="1623686455927">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633518" />
-    <state width="1029" height="164" key="GridCell.Tab.0.center" timestamp="1623684633517">
+    <state width="1029" height="482" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1623686455927" />
+    <state width="1029" height="482" key="GridCell.Tab.0.center" timestamp="1623686455926">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633517" />
-    <state width="1029" height="164" key="GridCell.Tab.0.left" timestamp="1623684633516">
+    <state width="1029" height="482" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1623686455926" />
+    <state width="1029" height="482" key="GridCell.Tab.0.left" timestamp="1623686455926">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633516" />
-    <state width="1029" height="164" key="GridCell.Tab.0.right" timestamp="1623684633517">
+    <state width="1029" height="482" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1623686455926" />
+    <state width="1029" height="482" key="GridCell.Tab.0.right" timestamp="1623686455927">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633517" />
+    <state width="1029" height="482" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1623686455927" />
     <state x="893" y="190" key="SettingsEditor" timestamp="1623682054472">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
@@ -123,5 +154,9 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="1259" y="452" key="publish.login/0.23.1920.1057@0.23.1920.1057" timestamp="1623682137822" />
+    <state x="1049" y="258" width="670" height="676" key="search.everywhere.popup" timestamp="1623688246544">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="1049" y="258" width="670" height="676" key="search.everywhere.popup/0.23.1920.1057@0.23.1920.1057" timestamp="1623688246544" />
   </component>
 </project>

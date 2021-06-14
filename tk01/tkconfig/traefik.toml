@@ -14,3 +14,10 @@
 [file]
   filename="/etc/traefik/rules.toml"
   watch=true
+
+[consulCatalog]
+endpoint = "172.16.17.158:8500"
+exposedByDefault=true
+domain="shenyi.com"
+frontEndRule="Host:{{.ServiceName}}. {{.Domain}}"
+strictChecks=true
