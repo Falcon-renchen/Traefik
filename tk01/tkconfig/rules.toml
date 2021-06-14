@@ -20,9 +20,11 @@
           [frontends.pro1.routes.apirule2]
            rule="Method:GET"
      [frontends.pro1v2]
+        entrypoints=["http","https"]
+        passHostHeader=true
         backend="pro1v2"
           [frontends.pro1v2.routes.apirule1]
-           rule="Host:services.shenyi.me;Path:/v2/users"
+           rule="Host:services.shenyi.me;PathPrefix:/v2/users"
           [frontends.pro1v2.routes.apirule2]
            rule="Method:GET,POST"
 

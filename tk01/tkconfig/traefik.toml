@@ -1,3 +1,14 @@
+[entryPoints]
+  [entryPoints.http]
+     address = ":80"
+    [entryPoints.http.redirect]
+        regex="/member"
+        replacement="/v2/users"
+        permanent=true
+  [entryPoints.https]
+     address = ":443"
+    [entryPoints.https.tls]
+
 [api]
 
 [file]

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f72938a0-024f-4d15-bdab-9193b8be38ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tk01/tkconfig/rules.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tk01/tkconfig/traefik.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tk01/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/tk01/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tk01/tkconfig/rules.toml" beforeDir="false" afterPath="$PROJECT_DIR$/tk01/tkconfig/rules.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tk01/tkconfig/traefik.toml" beforeDir="false" afterPath="$PROJECT_DIR$/tk01/tkconfig/traefik.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,26 +91,26 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="984" y="217" key="#Deployment/0.23.1920.1057@0.23.1920.1057" timestamp="1623681964191" />
-    <state x="467" y="149" key="CommitChangelistDialog2" timestamp="1623559750447">
+    <state x="467" y="149" key="CommitChangelistDialog2" timestamp="1623682599336">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="467" y="149" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1623559750447" />
-    <state width="1029" height="164" key="GridCell.Tab.0.bottom" timestamp="1623682014939">
+    <state x="467" y="149" key="CommitChangelistDialog2/0.23.1920.1057@0.23.1920.1057" timestamp="1623682599336" />
+    <state width="1029" height="164" key="GridCell.Tab.0.bottom" timestamp="1623684633518">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1623682014939" />
-    <state width="1029" height="164" key="GridCell.Tab.0.center" timestamp="1623682014938">
+    <state width="1029" height="164" key="GridCell.Tab.0.bottom/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633518" />
+    <state width="1029" height="164" key="GridCell.Tab.0.center" timestamp="1623684633517">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1623682014938" />
-    <state width="1029" height="164" key="GridCell.Tab.0.left" timestamp="1623682014937">
+    <state width="1029" height="164" key="GridCell.Tab.0.center/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633517" />
+    <state width="1029" height="164" key="GridCell.Tab.0.left" timestamp="1623684633516">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1623682014937" />
-    <state width="1029" height="164" key="GridCell.Tab.0.right" timestamp="1623682014938">
+    <state width="1029" height="164" key="GridCell.Tab.0.left/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633516" />
+    <state width="1029" height="164" key="GridCell.Tab.0.right" timestamp="1623684633517">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state width="1029" height="164" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1623682014938" />
+    <state width="1029" height="164" key="GridCell.Tab.0.right/0.23.1920.1057@0.23.1920.1057" timestamp="1623684633517" />
     <state x="893" y="190" key="SettingsEditor" timestamp="1623682054472">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
