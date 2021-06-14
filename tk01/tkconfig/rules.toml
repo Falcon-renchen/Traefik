@@ -1,0 +1,28 @@
+[api]
+
+[file]
+  [backends]
+     [backends.pro1]
+        [backends.pro1.servers.userservice1]
+           url="http://172.16.17.1:8001"
+           weight=1
+        [backends.pro1.servers.userservice2]
+           url="http://172.16.17.1:8002"
+           weight=2
+     [backends.pro1v2]
+        [backends.pro1v2.servers.userservice1]
+           url="http://172.16.17.1:8003"
+   [frontends]
+     [frontends.pro1]
+        backend="pro1"
+          [frontends.pro1.routes.apirule1]
+           rule="Host:services.shenyi.me;Path:/v1/users"
+          [frontends.pro1.routes.apirule2]
+           rule="Method:GET"
+     [frontends.pro1v2]
+        backend="pro1v2"
+          [frontends.pro1v2.routes.apirule1]
+           rule="Host:services.shenyi.me;Path:/v2/users"
+          [frontends.pro1v2.routes.apirule2]
+           rule="Method:GET,POST"
+

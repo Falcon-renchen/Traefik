@@ -1,0 +1,5 @@
+[api]
+
+[file]
+  filename="/etc/traefik/rules.toml"
+  watch=true

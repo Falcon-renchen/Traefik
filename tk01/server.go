@@ -13,7 +13,7 @@ func main() {
 	go (func() {
 		mux := http.NewServeMux()
 		mux.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
-			writer.Write([]byte("user api1\r\n"))
+			writer.Write([]byte("v1: user api1\r\n"))
 		})
 		server := &http.Server{
 			Addr:    ":8001",
@@ -25,10 +25,22 @@ func main() {
 	go (func() {
 		mux := http.NewServeMux()
 		mux.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
-			writer.Write([]byte("user api2\r\n"))
+			writer.Write([]byte("v1: user api2\r\n"))
 		})
 		server := &http.Server{
 			Addr:    ":8002",
+			Handler: mux,
+		}
+		server.ListenAndServe()
+	})()
+
+	go (func() {
+		mux := http.NewServeMux()
+		mux.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
+			writer.Write([]byte("v2: user api\r\n"))
+		})
+		server := &http.Server{
+			Addr:    ":8003",
 			Handler: mux,
 		}
 		server.ListenAndServe()
